@@ -1,0 +1,9 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "minigame-example",
+  "id": "40bbdfbd-bf8a-4a33-9703-ba76ce4f54a1",
+  "version": "2.4.10",
+  "isNew": false,
+  "description": "小游戏范例"
+}
