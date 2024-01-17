@@ -1,19 +1,27 @@
 {
-  "name": "minigame-example",
-  "version": "1.0.0",
-  "description": "小游戏范例 (Power By CocosCreator)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.19.0",
-    "@typescript-eslint/parser": "^6.19.0",
-    "eslint": "^8.56.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0"
-  }
+	"name": "minigame-example",
+	"version": "1.0.0",
+	"description": "小游戏范例 (Power By CocosCreator)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
+		"eslint": "^8.56.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"./assets/**/*.ts": "eslint"
+	}
 }
